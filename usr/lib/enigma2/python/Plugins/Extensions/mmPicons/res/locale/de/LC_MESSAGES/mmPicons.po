@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cbpanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-02 19:57+0100\n"
+"POT-Creation-Date: 2024-03-08 19:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ))^^(( <>\n"
 "Language-Team: *\n"
@@ -10,204 +10,170 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:325 plugin.py:345 plugin.py:494 plugin.py:522 plugin.py:641
-#: plugin.py:671 plugin.py:824 plugin.py:852 plugin.py:968 plugin.py:998
-#: plugin.py:1150 plugin.py:1180 plugin.py:1332 plugin.py:1362 plugin.py:1521
-#: plugin.py:1531
-#, python-format
-msgid "..:: mMark Picons & Skins V. %s ::.."
+#: plugin.py:297 plugin.py:477 plugin.py:682 plugin.py:829
+msgid "Picons folder "
+msgstr "Picons-Ordner"
+
+#: plugin.py:300 plugin.py:475 plugin.py:680 plugin.py:827
+msgid "Loading data... Please wait"
 msgstr ""
 
-#: plugin.py:330 plugin.py:501 plugin.py:648 plugin.py:831 plugin.py:975
-#: plugin.py:1157 plugin.py:1339
-msgid "Folder picons "
-msgstr "Ordner Picons "
+#: plugin.py:301
+msgid "Remove"
+msgstr "Entfernen"
 
-#: plugin.py:334 plugin.py:424 plugin.py:563 plugin.py:713 plugin.py:754
-#: plugin.py:893 plugin.py:1039 plugin.py:1080 plugin.py:1221 plugin.py:1262
-#: plugin.py:1403 plugin.py:1449
-msgid "Please select ..."
-msgstr "Bitte auswählen ..."
-
-#: plugin.py:335 plugin.py:505 plugin.py:835
-msgid "Select"
-msgstr "Wählen"
-
-#: plugin.py:336
+#: plugin.py:302
 msgid "Exit"
 msgstr "Ausfahrt"
 
-#: plugin.py:337
-msgid "Remove"
-msgstr ""
+#: plugin.py:303 plugin.py:485 plugin.py:690 plugin.py:837
+msgid "Preview"
+msgstr "Vorschau"
 
-#: plugin.py:338
+#: plugin.py:304
 msgid "Restart"
-msgstr ""
+msgstr "Neustart"
 
-#: plugin.py:369
+#: plugin.py:344
 msgid "Do you want to restart Enigma?"
-msgstr ""
+msgstr "Möchten Sie Enigma neu starten?"
 
-#: plugin.py:405
+#: plugin.py:387
 msgid ":P  COMING SOON!!!"
 msgstr ""
 
-#: plugin.py:408
+#: plugin.py:390
 #, python-format
-msgid "Do you want to remove all picons in folder?\n"
+msgid ""
+"Do you want to remove all picons in folder?\n"
 "%s\n"
 "It could take a few minutes, wait .."
 msgstr ""
+"Möchten Sie alle Picons im Ordner entfernen?\n"
+"%s\n"
+"Es kann ein paar Minuten dauern, warte .."
 
-#: plugin.py:412
+#: plugin.py:394
 #, python-format
 msgid "Erase %s... please wait"
-msgstr ""
+msgstr "%s löschen... bitte warten"
 
-#: plugin.py:423
+#: plugin.py:406
 #, python-format
 msgid "%s it has been cleaned"
-msgstr ""
+msgstr "%s es wurde gereinigt"
 
-#: plugin.py:499 plugin.py:646 plugin.py:829 plugin.py:973 plugin.py:1155
-#: plugin.py:1337
-msgid "Load selected filter list, please wait ..."
-msgstr "Ausgewählte Filterliste laden, bitte warten ..."
+#: plugin.py:407 plugin.py:551 plugin.py:608 plugin.py:752 plugin.py:913
+#: plugin.py:991
+msgid "Please select ..."
+msgstr "Bitte auswählen ..."
 
-#: plugin.py:506 plugin.py:653 plugin.py:836 plugin.py:980 plugin.py:1162
-#: plugin.py:1344 plugin.py:1528
-msgid "Back"
-msgstr "Zurück"
-
-#: plugin.py:542 plugin.py:691 plugin.py:872 plugin.py:1018 plugin.py:1200
-#: plugin.py:1382
-msgid "Try again later ..."
-msgstr "Versuchen Sie es später noch einmal ..."
-
-#: plugin.py:652 plugin.py:979 plugin.py:1161 plugin.py:1343
+#: plugin.py:483 plugin.py:835
 msgid "Install"
 msgstr "Installieren"
 
-#: plugin.py:721 plugin.py:1047 plugin.py:1229 plugin.py:1411
-msgid "Do you want to install?\n"
+#: plugin.py:484 plugin.py:689 plugin.py:836 plugin.py:1056
+msgid "Back"
+msgstr "Zurück"
+
+#: plugin.py:525 plugin.py:730
+msgid "Try again later ..."
+msgstr "Versuchen Sie es später noch einmal ..."
+
+#: plugin.py:564 plugin.py:925
+msgid ""
+"Do you want to install?\n"
 "It could take a few minutes, wait .."
-msgstr "Wollen Sie installieren?\n"
+msgstr ""
+"Wollen Sie installieren?\n"
 "Es könnte ein paar Minuten dauern, warte .."
 
-#: plugin.py:724 plugin.py:1050 plugin.py:1232 plugin.py:1414
+#: plugin.py:567 plugin.py:928
 msgid "... please wait"
 msgstr "... Warten Sie mal"
 
-#: plugin.py:749 plugin.py:1075 plugin.py:1257 plugin.py:1444
+#: plugin.py:598 plugin.py:956
+msgid "Picons Not Installed ..."
+msgstr "Picons nicht installiert ..."
+
+#: plugin.py:603 plugin.py:968 plugin.py:977 plugin.py:986
 msgid "Install ..."
 msgstr ""
 
-#: plugin.py:753 plugin.py:1079 plugin.py:1261
+#: plugin.py:607
 msgid "Successfully Picons Installed"
+msgstr "Picons erfolgreich installiert"
+
+#: plugin.py:615
+msgid "Download..."
 msgstr ""
 
-#: plugin.py:1418
+#: plugin.py:688
+msgid "Select"
+msgstr "Wählen"
+
+#: plugin.py:932
 msgid "Xstreamity Player not installed"
 msgstr ""
 
-#: plugin.py:1448
+#: plugin.py:972 plugin.py:982 plugin.py:990
 msgid "Successfully Skin Installed"
-msgstr ""
+msgstr "Skin erfolgreich installiert"
 
-#: plugin.py:1518
+#: plugin.py:1045
 msgid "Config"
 msgstr ""
 
-#: plugin.py:1524
-msgid "Config Panel Addon"
-msgstr "Konfiguration Platte Addon"
-
-#: plugin.py:1525
-msgid "Select Folder"
+#: plugin.py:1052 plugin.py:1107
+msgid "SELECT YOUR CHOICE"
 msgstr ""
 
-#: plugin.py:1527
+#: plugin.py:1054
+msgid "Choice"
+msgstr "Auswahl"
+
+#: plugin.py:1055
 msgid "Save"
 msgstr "Speichern"
 
-#: plugin.py:1551
+#: plugin.py:1091
 #, python-format
-msgid "Config Panel Addon\n"
+msgid ""
+"Config Panel Addon\n"
 "Your current IP is %s"
-msgstr "Config Panel Addon\n"
+msgstr ""
+"Config Panel Addon\n"
 "Ihre aktuelle IP ist %s"
 
-#: plugin.py:1556
+#: plugin.py:1097
 msgid "Set the path to the Picons folder"
 msgstr "Legen Sie den Pfad zu dem Picons-Ordner fest"
 
-#: plugin.py:1556
+#: plugin.py:1097
 msgid "Press Ok to select the folder containing the picons files"
-msgstr ""
+msgstr "Drücken Sie OK, um den Ordner auszuwählen, der die Picons-Dateien enthält"
 
-#: plugin.py:1589
+#: plugin.py:1140
 msgid "Restart Enigma is Required. Do you want to continue?"
-msgstr ""
+msgstr "Enigma neu starten ist erforderlich. Möchtest du fortfahren?"
 
-#: plugin.py:1608
+#: plugin.py:1159
 msgid "Choose Directory:"
 msgstr ""
 
-#: plugin.py:1609
+#: plugin.py:1160
 msgid "Choose directory"
 msgstr ""
 
-#: plugin.py:1651
+#: plugin.py:1200
 msgid "Really close without saving the settings?"
 msgstr "Wirklich schließen, ohne die Einstellungen zu speichern?"
 
-#: plugin.py:1664
-msgid "mMark Picons & Skins"
-msgstr ""
-
-#: plugin.py:1677
-msgid "mMark Picons & Skins V."
-msgstr ""
-
-#~ msgid "Configure folder containing picons files"
-#~ msgstr "Konfigurieren Sie einen Ordner mit Picons-Dateien"
-
-#~ msgid "Successfully saved configuration"
-#~ msgstr "Erfolgreich gespeicherte Konfiguration"
-
-#~ msgid "Installation Picons"
-#~ msgstr "Installation Picons"
-
-#~ msgid "Execution Progress:"
-#~ msgstr "Execution Fortschritt:"
-
-#~ msgid "Execution finished!!"
-#~ msgstr "Die Ausführung abgeschlossen!!"
-
-#~ msgid "Question"
-#~ msgstr "Question"
-
-#~ msgid "Information"
-#~ msgstr "Information"
-
-#~ msgid "Warning"
-#~ msgstr "Warning"
-
-#~ msgid "Error"
-#~ msgstr "Error"
-
-#~ msgid "Message"
-#~ msgstr "Message"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
+#~ msgid "Config Panel Addon"
+#~ msgstr "Konfiguration Platte Addon"

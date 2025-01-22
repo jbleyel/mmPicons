@@ -1,27 +1,63 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 from Components.Language import language
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import gettext
 from os import environ as os_environ
-plugin_path = '/usr/lib/enigma2/python/Plugins/Extensions/mmPicons/'
+import os
+import sys
+
 PluginLanguageDomain = 'mmPicons'
 PluginLanguagePath = 'Extensions/mmPicons/res/locale'
-try:
-    from enigma import eMediaDatabase
-    isDreamOS = True
-except:
-    isDreamOS = False
+
+
+
+def trace_error():
+    import traceback
+    try:
+        traceback.print_exc(file=sys.stdout)
+        traceback.print_exc(file=open('/tmp/Error.log', 'a'))
+    except Exception as e:
+        print('error: ', str(e))
+        pass
+
+
+def logdata(name='', data=None):
+    try:
+        data = str(data)
+        fp = open('/tmp/mmPicons.log', 'a')
+        fp.write(str(name) + ': ' + data + "\n")
+        fp.seek(0)
+        fp.close()
+    except:
+        trace_error()
+        pass
+
+
+def getversioninfo():
+    currversion = '1.4'
+    version_file = '/usr/lib/enigma2/python/Plugins/Extensions/mmPicons/version'
+    if os.path.exists(version_file):
+        try:
+            fp = open(version_file, 'r').readlines()
+            for line in fp:
+                if 'version' in line:
+                    currversion = line.split('=')[1].strip()
+        except:
+            pass
+    logdata("Version ", currversion)
+    return (currversion)
 
 
 def localeInit():
-    if isDreamOS:
+    if os.path.exists('/var/lib/dpkg/status'):
         lang = language.getLanguage()[:2]
         os_environ['LANGUAGE'] = lang
     gettext.bindtextdomain(PluginLanguageDomain, resolveFilename(SCOPE_PLUGINS, PluginLanguagePath))
 
 
-if isDreamOS:
+if os.path.exists('/var/lib/dpkg/status'):
     _ = lambda txt: gettext.dgettext(PluginLanguageDomain, txt) if txt else ""
     localeInit()
     language.addCallback(localeInit)
@@ -32,4 +68,4 @@ else:
         else:
             print(("[%s] fallback to default translation for %s" % (PluginLanguageDomain, txt)))
             return gettext.gettext(txt)
-    language.addCallback(localeInit())
+    language.addCallback(localeInit)
